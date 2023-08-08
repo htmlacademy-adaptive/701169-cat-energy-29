@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма заказа</title>
+</head>
+<body class="page__body">
+  <header class="main-header">
+    <a href="#" class="main-header__logo">
+      <img src="/701169-cat-energy-29/source/img/logo.png" width="33" height="38" alt="Логотип сайта Кэт Энерджи.">
+    </a>
+    <a href="#" class="main-header__logo logo-letters">
+      <img src="/701169-cat-energy-29/source/img/logo-letters.svg" width="101" height="18" alt="Кэт Энерджи.">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Отобразить меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list navigation-list">
+          <li class="navigation-list__item navigation-list__item--current">
+            <a href="#">Главная</a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="#">Каталог продукции</a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container form">
+    <div class="form__wrapper">
+      <section class="form__heading">
+        <h1 class="form-title">Подбор программы</h1>
+        <p class="form__desc">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </section>
+      <section class="pet-info">
+        <h2 class="visually-hidden">Ввести данные кота</h2>
+        <form class="general-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="pet-form">
+            <label for="pet-name">Имя:*</label>
+            <input type="text" id="pet-name" name="pet-name" placeholder="Барсик" required>
+          </p>
+          <p class="pet-form">
+            <label for="pet-weight">Вес(кг):*</label>
+            <input type="text" id="pet-weight" name="pet-weight" placeholder="7" required>
+          </p>
+          <p class="pet-form">
+            <label for="pet-age">Возраст(Лет):</label>
+            <input type="text" id="pet-age" name="pet-age" placeholder="7">
+          </p>
+        </form>
+      </section>
+      <fieldset class="target-form">
+          <legend class="visually-hidden">Выбрать цель программы</legend>
+          <ul class="target__list">
+            <li class="target__item">
+              <label class="control">
+                <input class="control-input" type="radio" name="program-target" value="loose-weight" checked>Похудение
+              </label>
+            </li>
+            <li class="target__item">
+              <label class="control">
+                <input class="control-input" type="radio" name="program-target" value="gain-weight">Набор массы
+              </label>
+            </li>
+            <li class="target__item">
+              <label class="control">
+                <input class="control-input" type="radio" name="program-target" value="need-help">Не знаю (Нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+      </fieldset>
+      <section class="owner-info">
+          <h2 class="owner-info__title">Контактные данные (владельца кота)</h2>
+          <form class="owner-contacts" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="form-email">
+              <label for="owner-email">E-mail:*</label>
+              <input type="text" id="owner-email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="form-telephone">
+              <label for="owner-phone">Телефон:*</label>
+              <input type="text" id="owner-phone" placeholder="8 (960) 900-60-90">
+            </p>
+          </form>
+      </section>
+      <section class="comment">
+        <h2 class="comment__title">Комментарий</h2>
+        <form class="comment-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="text" id="comment-detail" name="comment-detail" placeholder="Расскажите обо всех повАдках кота">
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <section class="address">
+      <div class="address__wrapper">
+        <p class="address__collab-title">приглашаем к сотрудничеству дилеров!</p>
+        <address>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="address__map">
+          <img src="" alt="">
+        </div>
+      </div>
+    </section>
+    <div class="main-footer__wrapper">
+      <a href="#" class="footer__logo logo-letters">
+        <img src="/701169-cat-energy-29/source/img/logo-letters.svg" width="128" height="24" alt="Кэт Энерджи.">
+      </a>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <span class="visually-hidden">Вконтакте</span>
+            <a href="#" class="social__link"></a>
+          </li>
+          <li class="social__item">
+            <span class="visually-hidden">Youtube</span>
+            <a href="#" class="social__link"></a>
+          </li>
+          <li class="social__item">
+            <span class="visually-hidden">Телеграм</span>
+            <a href="#" class="social__link"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="dev-logo__wrapper">
+        <span class="dev-logo__name">HTML Academy</span>
+        <a href="#" class="dev-logo__pic">
+          <img src="/701169-cat-energy-29/source/img/htmlacademy.svg" width="27" height="34" alt="HTML Academy.">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
