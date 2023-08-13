@@ -1,0 +1,154 @@
+.example {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #eaeaea;
+  background-size: 100%;
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  border: none;
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  text-align: left;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.example__desc {
+  font-family: "Lato", sans-serif;
+  color: #444444;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 280px;
+}
+
+.example__stats {
+  display: flex;
+  justify-content: space-around;
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats__number {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.stats__desc {
+  font-family: "Lato", sans-serif;
+  color: #444444;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  width: 59px;
+  padding: 0;
+  margin: 0;
+}
+
+.example__cost {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.example__slider {
+  min-height: 256px;
+}
+
+@media (min-width: 768px) {
+  .example {
+    background-color: #ffffff;
+  }
+
+  .example__title {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  .example__desc {
+    min-width: 708px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  .example__stats {
+    justify-content: start;
+  }
+
+  .stats__item:first-child {
+    margin-right: 42px;
+  }
+
+  .example__cost {
+    width: 174px;
+    text-align: right;
+    margin-top: -9%;
+    margin-left: 75%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .example__slider {
+    min-height: 512px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .example {
+    background-color: #f2f2f2;
+    height: 462px;
+  }
+
+  .example__desc {
+    width: 436px;
+    margin-bottom: 55px;
+  }
+
+  .example__cost {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}

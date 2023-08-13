@@ -1,0 +1,99 @@
+@media (min-width: 360px) {
+  .main-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    margin: 27px 35px 25px 36px;
+    padding: 0;
+  }
+
+  .main-desc {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-intro {
+    min-height: 302px;
+    background-image: url("../img/back_color.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .main-intro__button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 55%;
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-intro {
+    width: 95%;
+    // background-image: url("../img/can-image.png");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    padding-left: 29px;
+    padding-right: 31px;
+    margin-left: 30px;
+    margin-right: 31px;
+  }
+
+  .main-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-desc {
+    color: #000000;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 365px 21px 120px;
+  }
+}
+
+@media (min-width: 1060px) {
+  h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    margin: 65px 234px 40px 120px;
+    padding: 0;
+  }
+}
