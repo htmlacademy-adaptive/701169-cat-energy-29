@@ -1,6 +1,6 @@
 .example {
-  width: 100%;
-  margin: 0;
+  width: 95%;
+  margin: 0 auto;
   padding: 0;
   border: none;
   background-color: #eaeaea;
@@ -8,9 +8,9 @@
 }
 
 .example__wrapper {
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 0;
-  width: 90%;
+  // width: 95%;
   border: none;
 }
 
