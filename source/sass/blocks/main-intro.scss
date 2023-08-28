@@ -1,4 +1,4 @@
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .main-title {
     font-family: "Oswald", sans-serif;
     font-size: 36px;
@@ -7,8 +7,10 @@
     text-align: center;
     font-style: normal;
     font-weight: 400;
-    margin: 27px 35px 25px 36px;
     padding: 0;
+    padding-top: 27px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   .main-desc {
@@ -22,40 +24,42 @@
     font-weight: 400;
     margin: 0;
     padding: 0;
+    padding-top: 25px;
   }
 
-  .main-intro {
-    min-height: 302px;
-    background-image: url("../img/back_color.jpg");
+  .main-intro__wrapper {
+    background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/hero_image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    // width: 100%;
-    // margin: 0 auto;
+    min-height: 302px;
     padding: 0;
     box-sizing: border-box;
+    border: none;
+    position: relative;
+    margin: 0;
+  }
+
+  .main-intro__preview {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -25%);
   }
 
   .main-intro__button {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 55%;
+    margin-top: 135px;
     width: 85%;
+    z-index: 2;
   }
 }
 
 @media (min-width: 768px) {
-  .main-intro {
-    width: 95%;
-    // background-image: url("../img/can-image.png");
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    padding-left: 29px;
-    padding-right: 31px;
-    margin-left: 30px;
-    margin-right: 31px;
+  .main-intro__wrapper {
+    background-image: none;
   }
 
   .main-title {
@@ -68,6 +72,8 @@
     font-weight: 400;
     margin: 0;
     padding: 0;
+    width: 450px;
+    padding-left: 120px;
   }
 
   .main-desc {
@@ -80,12 +86,19 @@
     font-style: normal;
     font-weight: 400;
     padding: 0;
-    margin: 0 365px 21px 120px;
+    width: 283px;
+    padding-left: 120px;
+    padding-top: 40px;
+  }
+
+  .main-intro__button {
+    width: 244px;
+    margin-top: 50px;
   }
 }
 
-@media (min-width: 1060px) {
-  h1 {
+@media (min-width: 1440px) {
+  .main-title {
     font-family: "Oswald", sans-serif;
     font-size: 60px;
     line-height: 60px;
@@ -93,7 +106,18 @@
     text-align: left;
     font-style: normal;
     font-weight: 400;
-    margin: 65px 234px 40px 120px;
+    margin: 0 234px 40px 120px;
     padding: 0;
+    padding-top: 15%;
+  }
+
+  .main-intro__wrapper {
+    width: 100%;
+    background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/hero_image.jpg");
+    background-position: right;
+    background-size: 50%;
+    min-height: 720px;
+    margin-top: -12%;
+    z-index: -10;
   }
 }
