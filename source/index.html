@@ -15,8 +15,10 @@
   <a href="#" class="main-header__logo logo-letters">
     <img src="./img/logo-letters.svg" width="101" height="18" alt="Кэт Энерджи.">
   </a>
-  <button class="main-nav__toggle" type="button"><span class="visually-hidden">Отобразить меню</span></button>
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Отобразить меню</span>
+    </button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list navigation-list">
         <li class="navigation-list__item navigation-list__item--current">
@@ -34,11 +36,15 @@
 </header>
 <main class="main-container">
   <section class="main-intro">
-    <h1 class="main-title">Функциональное питание для котов</h1>
     <p class="main-desc">Занялся собой? Займись котом!</p>
     <div class="main-intro__wrapper">
-      <button class="main-intro__button button">Подобрать программу</button>
+      <h1 class="main-title">Функциональное питание для котов</h1>
+      <p class="main-desc">Занялся собой? Займись котом!</p>
+      <div class="main-intro__preview">
+        <img src="./img/can-image.png" width="270" height="280" alt="Пример упаковки корма.">
+      </div>
     </div>
+    <button class="main-intro__button button">Подобрать программу</button>
   </section>
   <section class="programs">
     <div class="programs__wrapper">
@@ -72,21 +78,21 @@
     </div>
   </section>
   <section class="example">
+    <h2>Живой пример</h2>
     <div class="example__wrapper">
-      <h2 class="example__title">Живой пример</h2>
       <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <dl class="example__stats">
         <div class="stats__item">
-          <dt class="stats__number">5 кг</dt>
-          <dd class="stats__desc">снижение веса</dd>
+          <dt class="stats__item-number">5 кг</dt>
+          <dd class="stats__item-desc">снижение веса</dd>
         </div>
         <div class="stats__item">
-          <dt class="stats__number">60 дней</dt>
-          <dd class="stats__desc">затрачено времени</dd>
+          <dt class="stats__item-number">60 дней</dt>
+          <dd class="stats__item-desc">затрачено времени</dd>
         </div>
       </dl>
-      <p class="example__cost">Затраты на питание: 15 000 РУБ</p>
-      <div class="example__slider"></div>
+      <p class="stats__cost">Затраты на питание: 15 000 РУБ</p>
+      <div class="stats__slider"></div>
     </div>
   </section>
 </main>
@@ -94,15 +100,14 @@
   <section class="address">
     <div class="address__wrapper">
       <p class="address__collab-title">приглашаем к сотрудничеству дилеров!</p>
-      <address class="address_name">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-    </div>
-    <div class="address__map">
+      <address>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="address__map">
         <img src="" alt="">
     </div>
   </section>
   <section class="main-footer__wrapper">
     <a href="#" class="footer__logo">
-      <img src="./img/logo-letters.svg" width="128" height="24" alt="Кэт Энерджи.">
+      <img src="/701169-cat-energy-29/source/img/logo-letters.svg" width="128" height="24" alt="Кэт Энерджи.">
     </a>
     <div class="main-footer__social social">
       <ul class="social__list">
@@ -123,10 +128,11 @@
     <div class="dev-logo__wrapper">
       <span class="dev-logo__name">HTML Academy</span>
       <a href="#" class="dev-logo__pic">
-        <img src="./img/htmlacademy.svg" width="27" height="34" alt="HTML Academy.">
+        <img src="/701169-cat-energy-29/source/img/htmlacademy.svg" width="27" height="34" alt="HTML Academy.">
       </a>
     </div>
   </section>
 </footer>
+<script src="./js/script.js"></script>
 </body>
 </html>
