@@ -1,10 +1,10 @@
-.more-products__wrapper {
+.more-product__wrapper {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
 
-.more-products__title {
+.more-product__title {
   font-family: "Oswald", sans-serif;
   color: #111111;
   text-align: center;
@@ -19,7 +19,7 @@
   padding-top: 103px;
 }
 
-.more-products__desc {
+.more-product__desc {
   font-family: "Lato", sans-serif;
   color: #444444;
   font-size: 12px;
@@ -32,7 +32,7 @@
   padding-bottom: 21px;
 }
 
-.more-products__button {
+.more-product__button {
   background-color: #f2f2f2;
   color: #444444;
 }
@@ -45,24 +45,24 @@
     box-sizing: border-box;
   }
 
-  .more-products__title {
+  .more-product__title {
     width: 134px;
     padding-top: 161px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .more-products__button {
+  .more-product__button {
     margin-top: 87px;
   }
 }
 
 @media (min-width: 1440px) {
-  .more-products__title {
+  .more-product__title {
     padding-top: 0;
   }
 
-  .more-products__button {
+  .more-product__button {
     margin-top: 100px;
   }
 }

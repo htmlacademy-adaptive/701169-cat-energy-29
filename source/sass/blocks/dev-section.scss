@@ -1,0 +1,14 @@
+.dev-section__name {
+  font-family: "Lato", sans-serif;
+  color: #444444;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .dev-section {
+    padding-bottom: 0;
+  }
+}

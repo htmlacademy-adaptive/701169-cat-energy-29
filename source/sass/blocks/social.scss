@@ -1,0 +1,13 @@
+.social__list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .social__list {
+    padding-top: 0;
+  }
+}
