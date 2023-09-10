@@ -31,6 +31,15 @@
   text-transform: uppercase;
   padding-top: 30px;
   padding-left: 90px;
+
+  &::before {
+    content: "";
+    top: 10;
+    left: 30;
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+  }
 }
 
 .program__desc {
