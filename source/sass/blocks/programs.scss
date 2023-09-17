@@ -2,8 +2,8 @@
   // width: 95%;
   min-width: 280px;
   display: flex;
-  // margin-left: 20px;
-  // margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 0;
 }
 
@@ -31,6 +31,29 @@
   text-transform: uppercase;
   padding-top: 30px;
   padding-left: 90px;
+  position: relative;
+}
+
+.program__title--slim::before {
+  content: "";
+  margin-left: -90px;
+  margin-top: -5px;
+  background-image: url("../img/cat-slim.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50px;
+  height: 53px;
+}
+
+.program__title--gain::before {
+  content: "";
+  margin-left: -90px;
+  margin-top: -5px;
+  background-image: url("../img/cat-gain.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 67px;
+  height: 50px;
 }
 
 .program__desc {
@@ -41,7 +64,16 @@
   line-height: 24px;
   color: #444444;
   padding-right: 33px;
-  padding-bottom: 42px;
+  padding-bottom: 19px;
+
+  &::after {
+    content: "";
+    border: 1px solid #d9d9d9;
+    width: 240px;
+    display: inline-block;
+    transform: scaleY(-1);
+    margin-top: 23px;
+  }
 }
 
 .program__learn-more {
@@ -55,6 +87,17 @@
   line-height: 16px;
   text-transform: uppercase;
   padding-bottom: 22px;
+
+  &::after {
+    content: "";
+    margin-left: 15px;
+    margin-top: 3px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 32px;
+    height: 10px;
+  }
 }
 
 
@@ -90,6 +133,10 @@
 
   .program__desc {
     width: 340px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .program__learn-more {
@@ -97,6 +144,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  .program__title--slim::before {
+    width: 200px;
+    height: 211px;
+    background-image: url("../img/cat-slim-tablet.svg");
+    margin-left: 420px;
+  }
+
+  .program__title--gain::before {
+    width: 268px;
+    height: 200px;
+    background-image: url("../img/cat-gain-tablet.svg");
+    margin-left: 370px;
   }
 }
 
@@ -121,5 +182,25 @@
 
   .programs__item:last-child {
     margin-bottom: 0;
+  }
+
+  .program__title {
+    margin-left: 160px;
+  }
+
+  .program__title--slim::before {
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/cat-slim-desktop.svg");
+    margin-left: -160px;
+    margin-top: -40px;
+  }
+
+  .program__title--gain::before {
+    width: 134px;
+    height: 100px;
+    background-image: url("../img/cat-gain-desktop.svg");
+    margin-left: -180px;
+    margin-top: -40px;
   }
 }

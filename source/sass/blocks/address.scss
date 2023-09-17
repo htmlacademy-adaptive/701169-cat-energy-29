@@ -1,5 +1,5 @@
 .address__wrapper {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 26px;
   display: flex;
@@ -21,7 +21,7 @@
   color: #000000;
 }
 
-.address_name {
+.address__name {
   font-family: "Lato", sans-serif;
   color: #444444;
   font-size: 14px;
@@ -31,12 +31,31 @@
   width: 157px;
 }
 
+.address__map-picture {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
+  .address {
+    width: 100%;
+  }
+
   .address__wrapper {
     width: 82%;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
     padding: 0;
+    min-height: 200px;
+  }
+
+  .address__name {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1440px) {
+  .address__wrapper {
+    display: none;
   }
 }

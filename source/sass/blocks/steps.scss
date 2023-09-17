@@ -33,10 +33,36 @@
   padding-left: 80px;
   margin: 0;
   width: 200px;
+
+  &::before {
+    content: "";
+    margin-left: -80px;
+    margin-top: -3px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .steps__item:not(:last-child) {
   margin-bottom: 46px;
+}
+
+.steps__item--nutrition::before {
+  background-image: url("../img/nutrition.svg");
+}
+
+.steps__item--powder::before {
+  background-image: url("../img/powder.svg");
+}
+
+.steps__item--food::before {
+  background-image: url("../img/food.svg");
+}
+
+.steps__item--month::before {
+  background-image: url("../img/month.svg");
 }
 
 @media (min-width: 768px) {
@@ -64,6 +90,47 @@
     line-height: 24px;
     padding-left: 0;
     padding-top: 151px;
+    position: relative;
+
+    &::before {
+      content: "";
+      margin-left: 0;
+      margin-top: -110px;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "";
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 136px;
+      height: 280px;
+      margin-top: -200px;
+      z-index: -5;
+    }
+  }
+
+  .steps__item--nutrition::after {
+    background-image: url("../img/1.svg");
+    margin-left: 60px;
+  }
+
+  .steps__item--powder::after {
+    background-image: url("../img/2.svg");
+    margin-left: 80px;
+  }
+
+  .steps__item--food::after {
+    background-image: url("../img/3.svg");
+    margin-left: 60px;
+  }
+
+  .steps__item--month::after {
+    background-image: url("../img/4.svg");
+    margin-left: 20px;
   }
 }
 
@@ -71,6 +138,7 @@
   .steps__wrapper {
     width: 85%;
     margin: 0 auto;
+    margin-bottom: 160px;
   }
 
   .steps__list {
