@@ -1,6 +1,6 @@
 .main-header {
   margin: 0 auto;
-  margin-bottom: 42px;
+  // margin-bottom: 42px;
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
@@ -107,6 +107,10 @@
 }
 
 @media (min-width: 768px) {
+  .main-nav--closed .navigation-list__item {
+    display: block;
+  }
+
   .main-header {
     display: flex;
     // justify-content: flex-start;
@@ -178,6 +182,8 @@
   text-align: left;
 }
 
-// @media (min-width: 1440px) {
-
-// }
+@media (min-width: 1440px) {
+  .navigation-list__item a {
+    color: #ffffff;
+  }
+}
